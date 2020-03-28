@@ -40,7 +40,7 @@ section {
 h1 {
     font-weight: 800;
     color: white;
-    font-size: 2.5em;
+    font-size: min(10vw, 64px);
     justify-self: center;
 }
 
@@ -68,6 +68,11 @@ p {
     font-weight: 100;
     line-height: 1.4rem;
     margin: 0;
+}
+strong p {
+    color: var(--grey);
+    font-weight: 700;
+    font-style: italic;
 }
 
 
@@ -187,37 +192,42 @@ li h3 {
     font-size: 1.1rem;
 }
 
-.standard {
+.alphabet {
     padding-left: 23px;
     list-style-type: lower-latin;
     overflow: visible;
 }
-.standard li {
-    font-style: italic;
+.alphabet li {
+    /* font-style: italic; */
     color: var(--grey) !important;
     overflow: initial;
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 15px;
 }
-.standard li p {
+.alphabet li p {
     font-weight: normal;
     font-size: 0.9rem;
     color: var(--grey);
 }
-
-.normal {
+.subdecimal {
+    overflow: visible;
+}
+.subdecimal label {
+    font-weight: 700;
+}
+.decimal {
     padding-left: 23px;
     list-style-type: decimal;
     overflow: visible;
 }
-.normal li {
+.decimal li {
     overflow: initial;
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 15px;
 }
-.normal li p {
+.decimal li p {
     font-size: 1rem;
 }
 
