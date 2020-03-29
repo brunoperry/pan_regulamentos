@@ -1,13 +1,14 @@
 :root {
 
     --font: 'Montserrat',sans-serif;
-    --green-light: #7aa97a;
-    --green: #608a60;
+    --green-light: #729f72;
+    --green: #547854;
     --green-dark: #426142;
     --black: #262626;
     --grey: #5a5a5a;
     --link: #00798f;
     --white: #ffffff;
+    --white-dimmed: #ffffff30;
 }
 
 html {
@@ -122,10 +123,15 @@ li h3 {
     margin: 0;
     background-color: var(--green);
 }
+#home ul {
+    margin: 0;
+}
 #home a {
     color: var(--white);
     font-weight: 500;
-    text-decoration: underline;
+    line-height: 1.6em;
+    border-bottom: 1px solid var(--white-dimmed);
+    display: inline-block;
 }
 
 #start {
