@@ -120,6 +120,7 @@ li h3 {
     top: 0;
     left: 0;
     background-color: var(--green);
+    transition: height 0.4s ease;
 }
 
 #home {
@@ -157,7 +158,6 @@ li h3 {
     width: 100%;
     background-color: var(--green);
     flex: 1;
-    transition: height 0.4s ease;
 }
 #start a {
     display: flex;
