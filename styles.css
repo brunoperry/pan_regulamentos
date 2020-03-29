@@ -159,8 +159,12 @@ li h3 {
     /* background-color: var(--green); */
     flex: 1;
 }
-#start a {
+
+html:not([data-scroll='0']) #start {
     display: flex;
+}
+#start a {
+    display: none;
     position: absolute;
     width: 64px;
     height: 64px;
