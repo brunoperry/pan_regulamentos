@@ -160,11 +160,11 @@ li h3 {
     flex: 1;
 }
 
-html:not([data-scroll='0']) #start {
-    display: flex;
+html:not([data-scroll='0']) #start a {
+    display: none;
 }
 #start a {
-    display: none;
+    display: flex;
     position: absolute;
     width: 64px;
     height: 64px;

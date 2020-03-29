@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll='0'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" />
@@ -8,6 +8,7 @@
     <title>Regulamentos de Admissão</title>
     <link defer href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800&display=swap" rel="stylesheet" type="text/css">
     <link href="styles.css" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="bckgrd"></div>
@@ -316,29 +317,5 @@
 
     <a id="topBtn" href="#indice" aria-label="indice"><svg enable-background="new 0 0 32 32" height="100%" viewBox="0 0 32 32" width="100%"><path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="var(--green)"/></svg></a>
 
-    <script>
-         window.onload = () => {
-            window.onresize = () => {
-                const val = window.innerHeight+'px';
-                bckgrd.style.height = start.style.minHeight = end.style.minHeight = val;
-            };
-            window.onresize();
-
-            let isVisible = false;
-            window.addEventListener('scroll', () => {
-                if(window.scrollY > window.innerHeight) {
-                    if(!isVisible) {
-                        isVisible = true;
-                        topBtn.style.display = 'flex';
-                    }
-                } else {
-                    if(isVisible) {
-                        isVisible = false;
-                        topBtn.style.display = 'none';
-                    }
-                }
-            });
-        }
-    </script>
 </body>
 </html>
