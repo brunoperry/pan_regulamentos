@@ -22,12 +22,10 @@ body {
     margin: 0 auto;
     padding: 0;
     max-width: 800px;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    /* opacity: 0; */
 }
 
 *, *:before, *:after {
@@ -44,7 +42,6 @@ h1 {
     color: var(--white);
     font-size: min(7vw, 30px);
     justify-self: center;
-    /* padding: 0 20px; */
     text-align: center;
 }
 
@@ -76,7 +73,6 @@ p {
 strong p {
     color: var(--grey);
     font-weight: 700;
-    /* font-style: italic; */
 }
 
 
@@ -230,7 +226,6 @@ li h3 {
     overflow: visible;
 }
 .alphabet li {
-    /* font-style: italic; */
     color: var(--grey) !important;
     overflow: initial;
     font-weight: 500;
@@ -267,7 +262,6 @@ li h3 {
     margin: 0;
     margin-bottom: 10px;
     color: var(--green-dark) !important;
-    /* font-style: italic; */
 }
 
 .round {
