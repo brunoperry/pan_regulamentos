@@ -664,9 +664,7 @@
         window.onload = () => {
             window.onresize = () => {
                 const val = window.innerHeight+'px';
-                bckgrd.style.height = val;
-                start.style.minHeight = val;
-                end.style.minHeight = val;
+                bckgrd.style.height = start.style.minHeight = end.style.minHeight = val;
             };
             window.onresize();
 

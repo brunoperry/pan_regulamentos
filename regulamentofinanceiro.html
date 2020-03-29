@@ -894,8 +894,7 @@
         window.onload = () => {
             window.onresize = () => {
                 const val = window.innerHeight+'px';
-                start.style.minHeight = val;
-                end.style.minHeight = val;
+                bckgrd.style.height = start.style.minHeight = end.style.minHeight = val;
             };
             window.onresize();
 
@@ -914,8 +913,6 @@
                 }
             });
         }
-        
-        
     </script>
 </body>
 </html>
