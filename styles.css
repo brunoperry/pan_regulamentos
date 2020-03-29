@@ -2,7 +2,7 @@
 
     --font: 'Montserrat',sans-serif;
     --green: #608a60;
-    --green-dark: #3b573b;
+    --green-dark: #426142;
     --black: #262626;
     --grey: #5a5a5a;
     --link: #00798f;
@@ -42,7 +42,7 @@ section {
 h1 {
     font-weight: 800;
     color: var(--white);
-    font-size: min(9vw, 28px);
+    font-size: min(7vw, 30px);
     justify-self: center;
     /* padding: 0 20px; */
     text-align: center;
@@ -76,7 +76,7 @@ p {
 strong p {
     color: var(--grey);
     font-weight: 700;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 
@@ -186,8 +186,14 @@ li h3 {
     width: 100%;
 }
 .title h2 {
-    font-weight: bold;
-    font-size: 2.5em;
+    font-weight: 700;
+    font-size: 1.8em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 .title h3 {
     font-weight: 100;
@@ -196,23 +202,28 @@ li h3 {
 }
 
 .subtitle {
-    color: var(--black);
+    color: var(--green-dark);
     margin-top: 20px;
     margin-bottom: 10px;
     width: 100%;
 }
 .subtitle:visited {
-    color: var(--black);
+    color: var(--green-dark);
 }
 .subtitle h2 {
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 .subtitle h3 {
     font-weight: 100;
     font-size: 1.1rem;
 }
 
+.roman {
+    padding-left: 20px;
+    list-style-type: lower-roman;
+    overflow: visible;
+}
 .alphabet {
     padding-left: 23px;
     list-style-type: lower-latin;
@@ -255,7 +266,8 @@ li h3 {
 .tight li {
     margin: 0;
     margin-bottom: 10px;
-    font-style: italic;
+    color: var(--green-dark) !important;
+    /* font-style: italic; */
 }
 
 .round {
