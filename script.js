@@ -12,12 +12,12 @@ window.onload = () => {
         if(window.scrollY > window.innerHeight) {
             if(!isVisible) {
                 isVisible = true;
-                topBtn.style.display = 'flex';
+                // topBtn.style.display = 'flex';
             }
         } else {
             if(isVisible) {
                 isVisible = false;
-                topBtn.style.display = 'none';
+                // topBtn.style.display = 'none';
             }
         }
     });
